@@ -1,0 +1,17 @@
+.logo {
+  width: 70px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text {
+  color: var(--primary-color);
+  margin-left: 20px;
+}

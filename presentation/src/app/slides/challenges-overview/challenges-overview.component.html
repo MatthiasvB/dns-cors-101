@@ -1,0 +1,40 @@
+<app-title>
+  <div title>
+    Unerwartete Herausforderungen
+  </div>
+  <div style="display: flex; flex-direction: row; justify-content: space-around; font-size: 40%; align-items: stretch; width: 100%">
+    <div style="display: flex; flex-direction: column; justify-content: space-between">
+      <div *ngFor="let challenge of expectedChallenges; index as i" style="text-align: center" [style.visibility]="expectedIndex >= i ? 'visible' : 'hidden'">
+        <span [style.background-color]="expectedColors[challenge]" class="item" (click)="expectedIndex = i + 1">{{ expectedIndex > i ? challenge : 'X' }}</span>
+        <div class="item spacer">{{challenge}}</div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: space-between">
+      <div *ngFor="let challenge of realChallenges; index as i" style="text-align: center" [style.visibility]="realIndex >= i ? 'visible' : 'hidden'">
+        <span [style.background-color]="realColors[challenge]" class="item" (click)="realIndex = i + 1">{{ realIndex > i ? challenge : 'X' }}</span>
+        <div class="item spacer">{{challenge}}</div>
+      </div>
+    </div>
+  </div>
+<!--  </div><div style="display: flex; flex-direction: row; justify-content: space-around; font-size: 40%; align-items: stretch">-->
+<!--    <div class="stretched" style="text-align: center">-->
+<!--      <div *ngFor="let challenge of expectedChallenges; index as i"-->
+<!--           [style.visibility]="expectedIndex >= i ? 'visible' : 'hidden'"-->
+<!--           (click)="expectedIndex = i + 1"-->
+<!--      >-->
+<!--        <div [style.background-color]="expectedColors[challenge]" class="item">{{ expectedIndex > i ? challenge : 'X' }}</div>-->
+<!--        <div style="visibility: hidden; height: 0" class="item">{{ challenge }}</div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--      <div *ngFor="let challenge of realChallenges; index as i" style="text-align: center">-->
+<!--        <div [style.visibility]="realIndex >= i ? 'visible' : 'hidden'">-->
+<!--          <div [style.background-color]="realColors[challenge]" class="item">{{ expectedIndex > i ? challenge : 'X' }}</div>-->
+<!--          <div style="visibility: hidden; height: 0" class="item">{{ challenge }}</div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+</app-title>

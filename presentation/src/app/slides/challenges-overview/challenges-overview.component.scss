@@ -1,0 +1,22 @@
+.item {
+  padding: 1em;
+  margin: .2em;
+  border-radius: 1em;
+  display: inline-block;
+  cursor: pointer;
+
+  &.spacer {
+    height: 0;
+    overflow: clip;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.stretched {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

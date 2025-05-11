@@ -1,0 +1,6 @@
+code[js-ansatz] .hljs-ln tbody tr:not(.no-blur) {
+  &:nth-child(n+5):nth-last-child(n) {
+    filter: var(--strong-code-blur);
+    transition: filter .3s;
+  }
+}

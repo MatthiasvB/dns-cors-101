@@ -1,0 +1,36 @@
+<app-title>
+  <div title>Why though?</div>
+  <div class="sideBySide pad">
+    <div class="sideBySide--item">
+      <h2>SSL</h2>
+      <p>Secure sockets layer</p>
+      <ul>
+        <li>encryption</li>
+        <ul>
+          <li>can not listen</li>
+          <li>can not tamper</li>
+        </ul>
+        <li>authenticity</li>
+        <ul>
+          <li>is who I think he is</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="sideBySide--item">
+      <h2>CORS</h2>
+      <p>Cross origin resource sharing</p>
+      <ul>
+        <li>not <em>anyone</em> can fuck with my API</li>
+        <ul>
+          <li>
+            <strong>CSRF</strong> Cross Site Request Forgery &hyphen; sends
+            request to my backend from different site. Could screw with data,
+            make payments, ...
+          </li>
+          <li>could request sensitive data using cached credentials</li>
+          <li>could use my (expensive) premium API for their own services</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</app-title>

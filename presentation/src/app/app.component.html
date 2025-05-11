@@ -1,0 +1,11 @@
+<app-page-container>
+  <div class="content">
+    <app-page style="position: relative">
+      <div style="position: absolute; top: -10px; left:5px;">
+        <app-progress-indicator [current]="current$ | async" [max]="max"></app-progress-indicator>
+      </div>
+      <router-outlet></router-outlet>
+    </app-page>
+  </div>
+</app-page-container>
+

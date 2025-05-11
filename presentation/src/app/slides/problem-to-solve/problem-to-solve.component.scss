@@ -1,0 +1,29 @@
+code.i0[problem-code] .hljs-ln tbody tr:not(:hover) {
+  transition: filter 0.3s;
+
+  &:nth-child(2) {
+    filter: var(--code-blur);
+  }
+  &:nth-child(4) {
+    filter: var(--code-blur);
+  }
+}
+
+code.i1[problem-code] .hljs-ln tbody tr:not(:hover) {
+  transition: filter 0.3s;
+
+  &:nth-child(3) {
+    filter: var(--code-blur);
+  }
+
+  &:nth-child(4) {
+    filter: var(--code-blur);
+  }
+
+  &:nth-child(8) {
+    filter: var(--code-blur);
+  }
+  &:nth-child(10) {
+    filter: var(--code-blur);
+  }
+}

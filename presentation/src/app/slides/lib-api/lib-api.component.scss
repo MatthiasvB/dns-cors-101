@@ -1,0 +1,6 @@
+code[define-routes]:not(.no-blur) .hljs-ln tbody tr {
+  &:nth-child(n+21):nth-last-child(n) {
+    filter: var(--strong-code-blur);
+    transition: filter .3s;
+  }
+}

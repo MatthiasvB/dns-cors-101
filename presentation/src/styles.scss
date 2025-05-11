@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+$mathema-primary-color: #C5003E;
+$mathema-secondary-color: #888A8B;
+body {
+
+  --page-width: 100vw;
+  --page-height: 100vh;
+
+  --primary-color: #{$mathema-primary-color};
+  --secondary-color: #{$mathema-secondary-color};
+
+  --code-blur: blur(2px);
+  --strong-code-blur: blur(6px);
+
+  font-size: 2.3em;
+
+  font-family: "Droid Serif", serif;
+
+  background: #222;
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url("/assets/droid-serif/DroidSerif-Regular.ttf");
+}
+
+pre {
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-wrap: break-word;
+  overflow: clip;
+  font-size: 80%;
+
+  code {
+    flex: 1;
+    //line-height: 1.5em;
+    //font-size: 14px;
+    min-height: 100%;
+    padding: 1em 1.2em;
+
+    &.hljs-line-numbers {
+      padding: 0 1em 0 0 !important;
+    }
+  }
+}
+
+/** Line numbers styles */
+.hljs {
+  //margin: 0 1em;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  transition: border ease 1s;
+}
+
+.hljs-ln {
+  padding: 8px 0;
+
+  tr {
+
+    td {
+      padding-left: .5em !important;
+    }
+
+    &:first-child td {
+      padding-top: 1em !important;
+    }
+
+    &:last-child td {
+      padding-bottom: 1em !important;
+    }
+  }
+}
+
+/* for block of numbers */
+td.hljs-ln-numbers {
+  user-select: none;
+  text-align: center;
+  border-right: 1px solid gray;
+  vertical-align: top;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+/* for block of code */
+td.hljs-ln-code {
+  padding-left: 8px !important;
+}
+
+.button {
+  background: var(--primary-color);
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 0;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #aaa;
+  }
+
+  &.button__clicked {
+    background: #888;
+  }
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: top;
+
+  &--item {
+    flex: 1;
+  }
+}
+
+.pad {
+  padding: 50px;
+}
+
+.large {
+  font-size: 150%;
+}
+
+.small {
+  font-size: 50%;
+}
+
+.smallish {
+  font-size: 75%;
+}

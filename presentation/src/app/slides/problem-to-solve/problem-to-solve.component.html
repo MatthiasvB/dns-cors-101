@@ -1,0 +1,57 @@
+<app-title>
+  <div title>
+    Ein Problem finden
+  </div>
+  <div>
+    <div style="position: relative">
+      <!-- What will be seen -->
+      <ng-container *ngFor="let code of codes, index as i">
+        <ng-template #codeTemplate>
+        <pre class="code">
+        <code [highlight]="code"
+              [languages]="['typescript']"
+              [lineNumbers]="true"
+              class="i{{i}}"
+              problem-code
+        ></code>
+        </pre>
+        </ng-template>
+        <div [style.display]="i == codeIndex ? 'block' : 'none'" style="position: absolute; bottom: 0; left: 0;">
+          <div *ngTemplateOutlet="codeTemplate"></div>
+        </div>
+      </ng-container>
+      <!-- Vertical spacer -->
+      <ng-container *ngFor="let code of codes, index as i">
+        <ng-template #codeTemplate>
+        <pre class="code">
+        <code [highlight]="code"
+              [languages]="['typescript']"
+              [lineNumbers]="true"
+        ></code>
+        </pre>
+        </ng-template>
+        <div style="width: 0; overflow: clip; display: inline-block">
+          <div *ngTemplateOutlet="codeTemplate"></div>
+        </div>
+      </ng-container>
+      <!-- Horizontal spacer -->
+      <ng-container *ngFor="let code of codes, index as i">
+        <ng-template #codeTemplate>
+        <pre class="code">
+        <code [highlight]="code"
+              [languages]="['typescript']"
+              [lineNumbers]="true"
+        ></code>
+        </pre>
+        </ng-template>
+        <div style="height: 0; overflow: clip">
+          <div *ngTemplateOutlet="codeTemplate"></div>
+        </div>
+      </ng-container>
+    </div>
+    <div>
+      <app-progress-indicator [current]="codeIndex" [max]="codes.length - 1"></app-progress-indicator>
+    </div>
+  </div>
+  <app-prev-next-buttons (next)="goToNextCode()" (prev)="goToPrevCode()"></app-prev-next-buttons>
+</app-title>

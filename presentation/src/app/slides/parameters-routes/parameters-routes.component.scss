@@ -1,0 +1,20 @@
+code[parameter-routes]:not(.show-client-api) .hljs-ln tbody tr {
+  &:nth-child(n+33):nth-child(-n+38) {
+    filter: var(--strong-code-blur);
+    transition: filter .3s;
+  }
+}
+
+code[parameter-routes]:not(.show-router-api) .hljs-ln tbody tr {
+  &:nth-child(n+40):nth-child(-n+42) {
+    filter: var(--strong-code-blur);
+    transition: filter .3s;
+  }
+}
+
+code[parameter-routes]:not(.show-parameter-api) .hljs-ln tbody tr {
+  &:nth-child(n+44):nth-child(-n+47) {
+    filter: var(--strong-code-blur);
+    transition: filter .3s;
+  }
+}
