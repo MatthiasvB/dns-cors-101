@@ -1,0 +1,48 @@
+.flow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  &--compact {
+    .box {
+      padding: 0.5rem 1rem;
+      font-size: 0.8em;
+    }
+
+    .connector {
+      height: 0.75rem;
+    }
+  }
+}
+
+.flow-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.box {
+  background: linear-gradient(145deg, 
+    var(--primary-color),
+    color-mix(in srgb, var(--primary-color), black 10%)
+  );
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.connector {
+  width: 8px;
+  height: 1.5rem;
+  background-color: var(--primary-color);
+  margin-top: -1px;
+  margin-bottom: -1px;
+  position: relative;
+  flex-grow: 1;
+}

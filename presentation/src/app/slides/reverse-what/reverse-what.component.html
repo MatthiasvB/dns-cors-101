@@ -5,17 +5,18 @@
     <ul>
       <li>you don't talk to my app</li>
       <li>you talk to my nginx</li>
-      <li>nginx talks to my app</li>
-      <ul>
-        <li>and abstracts all my internal port mappings away</li>
-        <li>provides all sorts of neat stuff</li>
-        <li>can <em>also</em> serve files / web apps if you want</li>
-        <li>can respond to <code>OPTIONS</code> requests and add headers for CORS</li>
-        <li>
-          can be the TLS endpoint (and talk without encryption within my host /
-          private network)
-        </li>
-      </ul>
+      <li>nginx talks to my app
+        <ul>
+          <li>and abstracts all my internal port mappings away</li>
+          <li>provides all sorts of neat stuff</li>
+          <li>can <em>also</em> serve files / web apps if you want</li>
+          <li>can respond to <code>OPTIONS</code> requests and add headers for CORS</li>
+          <li>
+            can be the TLS endpoint (and talk without encryption within my host /
+            private network)
+          </li>
+        </ul>
+      </li>
     </ul>
     <p>Actual applications have no clue that TLS and CORS exist</p>
   </div>

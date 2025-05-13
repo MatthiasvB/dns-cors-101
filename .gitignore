@@ -1,1 +1,4 @@
 **/.direnv
+**/e
+**/access.log
+**/error.log

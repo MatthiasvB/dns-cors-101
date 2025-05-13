@@ -45,6 +45,9 @@ import { TrustedCertificatesComponent } from './slides/trusted-certificates/trus
 import { BonusNixosComponent } from './slides/bonus-nixos/bonus-nixos.component';
 import { AgendaComponent } from './slides/agenda/agenda.component';
 import { RealAgendaComponent } from './slides/real-agenda/real-agenda.component';
+import { GoalComponent } from './slides/goal/goal.component';
+import { StepsComponent } from './slides/steps/steps.component';
+import { FlowComponent } from './templates/flow/flow.component';
 
 
 @NgModule({
@@ -90,7 +93,10 @@ import { RealAgendaComponent } from './slides/real-agenda/real-agenda.component'
     TrustedCertificatesComponent,
     BonusNixosComponent,
     AgendaComponent,
-    RealAgendaComponent
+    RealAgendaComponent,
+    GoalComponent,
+    StepsComponent,
+    FlowComponent
   ],
   imports: [
     BrowserModule,

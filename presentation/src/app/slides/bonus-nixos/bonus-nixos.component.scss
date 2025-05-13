@@ -1,0 +1,11 @@
+:host ::ng-deep ul li::before {
+  content: '';
+  position: absolute;
+  left: -1.5em;
+  top: 0.22em;
+  width: 0.8em;
+  height: 0.8em;
+  background: url('/assets/nix-snowflake-colours.svg') no-repeat center center;
+  background-size: contain;
+  transform: none;
+}

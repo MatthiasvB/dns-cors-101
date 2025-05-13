@@ -1,17 +1,12 @@
 <app-title>
-    <div title>Real agenda</div>
-    <div class="pad">
-      <ol>
-        <li>
-          What are CORS and SSL/TLS and why do we need them
-        </li>
-        <li>A basic client-server pair</li>
-        <li>Dumb CORS fix</li>
-        <li>Proper CORS fix</li>
-        <li>Dumb TLS fix</li>
-        <li>Proper TLS fix</li>
-        <li>Bonus: Make it easier with NixOS</li>
-      </ol>
+  <div title>Real Agenda</div>
+  <div class="pad">
+    <div class="flow">
+      <div *ngFor="let item of realAgendaItems; let i = index" 
+           class="flow-item"
+           [style.background]="i === 6 ? 'linear-gradient(145deg, #5277C3, #7EBAE4)' : ''">
+        {{ item }}
+      </div>
     </div>
-  </app-title>
-  
+  </div>
+</app-title>

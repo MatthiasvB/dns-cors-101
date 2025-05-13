@@ -1,7 +1,68 @@
 <app-title>
   <div title>What's the pain? &hyphen; CORS</div>
   <div class="pad">
-    Cross origin resource sharing
+    <p>Cross origin resource sharing</p>
+    <div class="chat-container smallish">
+      <div class="chat-line fe">
+        <div class="sender">FE</div>
+        <div class="chat-message fe-message">
+          <div class="message-header">
+            <div class="http-parts">
+              <div class="verb-part">OPTIONS</div>
+              <div class="route-part">/transfer-money</div>
+            </div>
+          </div>
+          <div class="message-content">
+            May I talk to you and if so, what may I say?
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-line be">
+        <div class="sender">BE</div>
+        <div class="chat-message be-message">
+          <div class="message-header">
+            <div class="http-parts">
+              <div class="verb-part">OPTIONS</div>
+              <div class="route-part">/transfer-money</div>
+            </div>
+          </div>
+          <div class="message-content">
+            You may if you are requesting from <code>https://easy-pay.com</code>. You can use headers <code>X</code> and <code>Y</code> and HTTP verbs <code>GET</code> and <code>POST</code>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-line fe">
+        <div class="sender">FE</div>
+        <div class="chat-message fe-message">
+          <div class="message-header">
+            <div class="http-parts">
+              <div class="verb-part">POST</div>
+              <div class="route-part">/transfer-money</div>
+            </div>
+          </div>
+          <div class="message-content">
+            Send 500 bucks to Annie
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-line be">
+        <div class="sender">BE</div>
+        <div class="chat-message be-message">
+          <div class="message-header">
+            <div class="http-parts">
+              <div class="verb-part">POST</div>
+              <div class="route-part">/transfer-money</div>
+            </div>
+          </div>
+          <div class="message-content">
+            Sorry, you don't have that kind of money
+          </div>
+        </div>
+      </div>
+    </div>
     <ul>
       <li>
         Easiest to "fix" by simply disabling using wildcard <code>"*"</code>

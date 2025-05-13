@@ -48,7 +48,7 @@ explain how to buy a domain and obtain API key
 
 - enable cron
 - install openssl + socat
-- install acme.sh: run `curl https://get.acme.sh | sh -s email=my@example.com`
+- install acme.sh: run `curl https://get.acme.sh | sh -s email=matthias.vombruch@mathema.de`
 - follow https://www.cyberciti.biz/faq/issue-lets-encrypt-wildcard-certificate-with-acme-sh-and-cloudflare-dns/
    - `mkdir -pv /etc/nginx/ssl/vorführeffekt.de/`
    - `acme.sh --set-default-ca --server letsencrypt`

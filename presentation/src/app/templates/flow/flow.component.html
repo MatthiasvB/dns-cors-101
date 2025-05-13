@@ -1,0 +1,6 @@
+<div class="flow-container" [class.flow-container--compact]="size === 'compact'">
+  <div class="flow-item" *ngFor="let item of items; let last = last; let i = index">
+    <div class="box" [ngStyle]="getBoxStyle(i)">{{ item }}</div>
+    <div class="connector" *ngIf="!last"></div>
+  </div>
+</div>

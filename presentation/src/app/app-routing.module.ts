@@ -35,6 +35,8 @@ import { TrustedCertificatesComponent } from './slides/trusted-certificates/trus
 import { BonusNixosComponent } from './slides/bonus-nixos/bonus-nixos.component';
 import { AgendaComponent } from './slides/agenda/agenda.component';
 import { RealAgendaComponent } from './slides/real-agenda/real-agenda.component';
+import { GoalComponent } from './slides/goal/goal.component';
+import { StepsComponent } from './slides/steps/steps.component';
 
 export const slideRoutes = [
   { path: "titlepage", component: TitleSlideComponent },
@@ -44,6 +46,8 @@ export const slideRoutes = [
   { path: "why-though", component: WhyThoughComponent },
   { path: "authenticity-how", component: AuthenticityHowComponent },
   { path: "ssl-vs-tls", component: SslVsTlsComponent },
+  { path: "goal", component: GoalComponent },
+  { path: "steps", component: StepsComponent },
   { path: "do-we-want-that", component: DoWeWantThatComponent },
   { path: "do-we-want-to-deal-with-that", component: DoWeWantToDealWithThatComponent },
   { path: "do-we-have-to", component: DoWeHaveToComponent },
@@ -51,9 +55,9 @@ export const slideRoutes = [
   { path: "whats-the-pain-cors", component: WhatsThePainCorsComponent },
   { path: "see-the-pain-cors", component: SeeThePainCorsComponent },
   { path: "reverse-what", component: ReverseWhatComponent },
+  { path: "whats-the-pain-tls", component: WhatsThePainTlsComponent },
   { path: "but-how-1", component: ButHowComponent },
   { path: "any-problems", component: AnyProblemsComponent },
-  { path: "whats-the-pain-tls", component: WhatsThePainTlsComponent },
   { path: "trusted-certificates", component: TrustedCertificatesComponent },
   { path: "bonus-nixos", component: BonusNixosComponent },
   // { path: "problem-to-solve", component: ProblemToSolveComponent },
