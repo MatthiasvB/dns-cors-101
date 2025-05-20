@@ -1,6 +1,0 @@
-Kontext etablieren oder besseren Fokus
-Relevanten Code highlighten
-Folie 4 genau wissen bis wo TS kommt
-Code sollte immer an der gleichen Stelle aufpoppen
-README statt library code
-Links größer
