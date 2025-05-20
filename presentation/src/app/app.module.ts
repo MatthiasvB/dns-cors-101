@@ -49,6 +49,7 @@ import { GoalComponent } from './slides/goal/goal.component';
 import { StepsComponent } from './slides/steps/steps.component';
 import { FlowComponent } from './templates/flow/flow.component';
 import { SeeTheSolutionCorsComponent } from './slides/see-the-solution-cors/see-the-solution-cors.component';
+import { GithubComponent } from './slides/github/github.component';
 
 
 @NgModule({
@@ -98,7 +99,8 @@ import { SeeTheSolutionCorsComponent } from './slides/see-the-solution-cors/see-
     GoalComponent,
     StepsComponent,
     FlowComponent,
-    SeeTheSolutionCorsComponent
+    SeeTheSolutionCorsComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,

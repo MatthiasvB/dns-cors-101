@@ -38,6 +38,7 @@ import { RealAgendaComponent } from './slides/real-agenda/real-agenda.component'
 import { GoalComponent } from './slides/goal/goal.component';
 import { StepsComponent } from './slides/steps/steps.component';
 import { SeeTheSolutionCorsComponent } from './slides/see-the-solution-cors/see-the-solution-cors.component';
+import { GithubComponent } from './slides/github/github.component';
 
 export const slideRoutes = [
   { path: "titlepage", component: TitleSlideComponent },
@@ -62,6 +63,7 @@ export const slideRoutes = [
   { path: "any-problems", component: AnyProblemsComponent },
   { path: "trusted-certificates", component: TrustedCertificatesComponent },
   { path: "bonus-nixos", component: BonusNixosComponent },
+  { path: "github", component: GithubComponent },
   // { path: "problem-to-solve", component: ProblemToSolveComponent },
   // { path: "ideal-api", component: IdealApiComponent },
   // { path: "solution-ansatz", component: FindSolutionComponent },
