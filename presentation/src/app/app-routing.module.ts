@@ -37,6 +37,7 @@ import { AgendaComponent } from './slides/agenda/agenda.component';
 import { RealAgendaComponent } from './slides/real-agenda/real-agenda.component';
 import { GoalComponent } from './slides/goal/goal.component';
 import { StepsComponent } from './slides/steps/steps.component';
+import { SeeTheSolutionCorsComponent } from './slides/see-the-solution-cors/see-the-solution-cors.component';
 
 export const slideRoutes = [
   { path: "titlepage", component: TitleSlideComponent },
@@ -55,6 +56,7 @@ export const slideRoutes = [
   { path: "whats-the-pain-cors", component: WhatsThePainCorsComponent },
   { path: "see-the-pain-cors", component: SeeThePainCorsComponent },
   { path: "reverse-what", component: ReverseWhatComponent },
+  { path: "solution-cors", component: SeeTheSolutionCorsComponent },
   { path: "whats-the-pain-tls", component: WhatsThePainTlsComponent },
   { path: "but-how-1", component: ButHowComponent },
   { path: "any-problems", component: AnyProblemsComponent },

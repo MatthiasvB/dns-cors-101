@@ -48,6 +48,7 @@ import { RealAgendaComponent } from './slides/real-agenda/real-agenda.component'
 import { GoalComponent } from './slides/goal/goal.component';
 import { StepsComponent } from './slides/steps/steps.component';
 import { FlowComponent } from './templates/flow/flow.component';
+import { SeeTheSolutionCorsComponent } from './slides/see-the-solution-cors/see-the-solution-cors.component';
 
 
 @NgModule({
@@ -96,7 +97,8 @@ import { FlowComponent } from './templates/flow/flow.component';
     RealAgendaComponent,
     GoalComponent,
     StepsComponent,
-    FlowComponent
+    FlowComponent,
+    SeeTheSolutionCorsComponent
   ],
   imports: [
     BrowserModule,

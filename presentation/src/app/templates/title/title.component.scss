@@ -12,9 +12,9 @@
   background: var(--secondary-color);
   height: 4000px;
   width: 4000px;
-  rotate: 55deg;
+  rotate: 60deg;
   position: absolute;
-  right: -4300px;
+  right: calc(-4400px + 25vh);
   top: -1600px;
 }
 
@@ -22,9 +22,9 @@
   background: var(--primary-color);
   height: 4000px;
   width: 4000px;
-  rotate: 35deg;
+  rotate: 30deg;
   position: absolute;
-  right: -4300px;
+  right: calc(-4400px + 25vh);
   bottom: -1600px;
 }
 

@@ -38,7 +38,7 @@
   let useCorsUrl = $state(false)
   let doubleEndpoint = $derived(useCorsUrl ? "double-with-stupid-cors" : "double");
 
-  const num = 14;
+  let num = $state(14);
   // fetch twice the number from the backend (POST /double/:num)
   // const twiceNum = (num: number) => {
   //   return fetch(`${backendUrl()}/${doubleEndpoint}`, {
@@ -75,7 +75,7 @@
       >{:else}<span class="insecure">insecure HTTP</span>{/if}
   </p>
   <p>
-    Calculating the double of {num} via backend. It is:
+    Calculating the double of <input class="input inline w-30" type="number" bind:value={num}/> via backend. It is:
     {#await twiceNum}
       ...Loading
     {:then number}
