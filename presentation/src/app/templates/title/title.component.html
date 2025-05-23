@@ -1,6 +1,6 @@
 <div class="container">
   <div class="layer">
-    <app-page-title>
+    <app-page-title  *ngIf="showTitle">
       <ng-content select="[title]"></ng-content>
     </app-page-title>
     <div class="content">
